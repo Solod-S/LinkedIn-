@@ -129,7 +129,7 @@ export const Hero = styled.div`
 `;
 export const Form = styled.div`
   margin-top: 100px;
-  width: 400px;
+  max-width: 400px;
   @media (max-width: 768px) {
     margin-top: 20px;
   }

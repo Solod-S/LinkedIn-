@@ -109,10 +109,12 @@ export const NavListItem = styled.li`
     min-width: 80px;
     position: relative;
     text-decoration: none;
+    cursor: pointer;
     span {
       color: rgba(0, 0, 0, 0.6);
       display: flex;
       align-items: center;
+      transition: color 167ms;
     }
 
     @media (max-width: 768px) {
@@ -127,4 +129,43 @@ export const NavListItem = styled.li`
       }
     }
   }
+`;
+
+export const SignOut = styled.div`
+  position: absolute;
+  top: 45px;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  width: 100px;
+  height: 40px;
+  font-size: 16px;
+  transition-duration: 167ms;
+  text-align: center;
+  display: none;
+`;
+
+export const User = styled(NavListItem)`
+  a > svg {
+    width: 24px;
+    border-radius: 50%;
+  }
+  a > img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+  span {
+    display: flex;
+    align-items: center;
+  }
+  &:hover {
+    ${SignOut} {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+`;
+export const Work = styled(User)`
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
 `;

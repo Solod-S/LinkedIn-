@@ -1,11 +1,28 @@
-import {} from "./Home.styled";
+import { Container, Section, Layout } from "./Home.styled";
 
-import logo from "../../../src/images/login-logo.svg";
-import hero from "../../../src/images/login-hero.svg";
-import google from "../../../src/images/google.svg";
+import LeftSide from "./LeftSide";
+import MainSide from "./MainSide";
+import RigthSide from "./RightSide";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <Container>
+      <Section>
+        <h5>
+          <a>Hiring in hurry? - </a>
+        </h5>
+        <p>
+          Find talented pros in record time with Upwork and keep business
+          moving.
+        </p>
+      </Section>
+      <Layout>
+        <LeftSide />
+        <MainSide />
+        <RigthSide />
+      </Layout>
+    </Container>
+  );
 };
 
 export default Home;

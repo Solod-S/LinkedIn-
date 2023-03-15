@@ -8,6 +8,9 @@ import {
   Nav,
   NavListWrap,
   NavListItem,
+  User,
+  Work,
+  SignOut,
 } from "./Header.styled";
 
 import logo from "../../../src/images/home-logo.svg";
@@ -18,6 +21,8 @@ import navJobs from "../../../src/images/nav-jobs.svg";
 import navMessaging from "../../../src/images/nav-messaging.svg";
 import navNotification from "../../../src/images/nav-notifications.svg";
 import navWork from "../../../src/images/nav-work.svg";
+import user from "../../../src/images/user.svg";
+import dpopDownMenu from "../../../src/images/down-icon.svg";
 
 const Header = () => {
   return (
@@ -68,6 +73,25 @@ const Header = () => {
                 <span>Notification</span>
               </a>
             </NavListItem>
+            <User>
+              <a>
+                <img src={user} alt="user icon" />
+                <span>Me</span>
+                <img src={dpopDownMenu} alt="dpop-down menu icon" />
+              </a>
+              <SignOut>
+                <a>Sign Out</a>
+              </SignOut>
+            </User>
+            <Work>
+              <a>
+                <img src={navWork} alt="navigation-work icon" />
+                <span>
+                  Work
+                  <img src={dpopDownMenu} alt="dpop-down menu icon" />
+                </span>
+              </a>
+            </Work>
           </NavListWrap>
         </Nav>
       </Content>
