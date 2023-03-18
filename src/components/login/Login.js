@@ -9,6 +9,7 @@ import {
   Form,
   Google,
 } from "./Login.styled";
+import { connect } from "react-redux";
 
 import logo from "../../../src/images/login-logo.svg";
 import hero from "../../../src/images/login-hero.svg";
@@ -42,4 +43,10 @@ const Login = () => {
   );
 };
 
-export default Login;
+const mapStateToProps = (state) => {
+  return {};
+};
+
+const mapDispatchToProps = (dispatch) => ({});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Login);

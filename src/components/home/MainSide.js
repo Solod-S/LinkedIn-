@@ -6,6 +6,7 @@ import {
   Description,
   SharedImg,
   SocialCounts,
+  SocialActions,
 } from "./MainSide.styled";
 
 import user from "../../../src/images/user.svg";
@@ -17,7 +18,7 @@ import ellipsis from "../../../src/images/ellipsis.svg";
 import exmpPost from "../../../src/images/post_exmpl.jpg";
 import like from "../../../src/images/like.svg";
 import claping from "../../../src/images/claping.svg";
-import likeAction from "../../../src/images/likeAction.svg";
+import likeAction from "../../../src/images/like2.svg";
 import commentAction from "../../../src/images/commentAction.svg";
 import reportAction from "../../../src/images/reportAction.svg";
 import sendAction from "../../../src/images/sendAction.svg";
@@ -83,6 +84,24 @@ const MainSide = () => {
               <a>2 comments</a>
             </li>
           </SocialCounts>
+          <SocialActions>
+            <button>
+              <img src={likeAction} alt="likeAction icon" />
+              <span>Like</span>
+            </button>
+            <button>
+              <img src={commentAction} alt="commentAction icon" />
+              <span>Comments</span>
+            </button>
+            <button>
+              <img src={reportAction} alt="reportAction icon" />
+              <span>Report</span>
+            </button>
+            <button>
+              <img src={sendAction} alt="reportAction icon" />
+              <span>Send</span>
+            </button>
+          </SocialActions>
         </Article>
       </div>
     </Container>

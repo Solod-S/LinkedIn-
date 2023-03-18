@@ -10,6 +10,13 @@ html {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+
 div,
 h1,
 h2,
