@@ -10,12 +10,13 @@ import {
   Item,
   CommunityCard,
 } from "./LeftSide.styled";
+import { connect } from "react-redux";
 
 import widget from "../../../src/images/widget-icon.svg";
 import item from "../../../src/images/item-icon.svg";
 import plus from "../../../src/images/plus-icon.svg";
 
-const LeftSide = () => {
+const LeftSide = (props) => {
   return (
     <Container>
       <ArtCard>
@@ -23,7 +24,9 @@ const LeftSide = () => {
           <CardBackGround />
           <a>
             <Photo />
-            <Link>Welcome, there!</Link>
+            <Link>
+              Welcome, {props.user ? props.user.displayName : "there"}!
+            </Link>
           </a>
           <a>
             <AddPhotoText>Add a photo</AddPhotoText>
@@ -66,4 +69,14 @@ const LeftSide = () => {
   );
 };
 
-export default LeftSide;
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  // signIn: () => dispatch(signInApi()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LeftSide);

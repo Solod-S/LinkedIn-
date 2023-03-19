@@ -13,18 +13,21 @@ import {
   SignOut,
 } from "./Header.styled";
 
-import logo from "../../../src/images/home-logo.svg";
-import search from "../../../src/images/search-icon.svg";
-import navHome from "../../../src/images/nav-home.svg";
-import navNetwork from "../../../src/images/nav-network.svg";
-import navJobs from "../../../src/images/nav-jobs.svg";
-import navMessaging from "../../../src/images/nav-messaging.svg";
-import navNotification from "../../../src/images/nav-notifications.svg";
-import navWork from "../../../src/images/nav-work.svg";
-import user from "../../../src/images/user.svg";
-import dpopDownMenu from "../../../src/images/down-icon.svg";
+import { connect } from "react-redux";
+import signOutApi from "../../../redux/actions/signOutApi";
 
-const Header = () => {
+import logo from "../../../../src/images/home-logo.svg";
+import search from "../../../../src/images/search-icon.svg";
+import navHome from "../../../../src/images/nav-home.svg";
+import navNetwork from "../../../../src/images/nav-network.svg";
+import navJobs from "../../../../src/images/nav-jobs.svg";
+import navMessaging from "../../../../src/images/nav-messaging.svg";
+import navNotification from "../../../../src/images/nav-notifications.svg";
+import navWork from "../../../../src/images/nav-work.svg";
+import user from "../../../../src/images/user.svg";
+import dpopDownMenu from "../../../../src/images/down-icon.svg";
+
+const Header = (props) => {
   return (
     <Container>
       <Content>
@@ -75,11 +78,17 @@ const Header = () => {
             </NavListItem>
             <User>
               <a>
-                <img src={user} alt="user icon" />
-                <span>Me</span>
-                <img src={dpopDownMenu} alt="dpop-down menu icon" />
+                {props.user && props.user.photoURL ? (
+                  <img src={props.user.photoURL} alt="user icon" />
+                ) : (
+                  <img src={user} alt="user icon" />
+                )}
+                <span>
+                  Me
+                  <img src={dpopDownMenu} alt="dpop-down menu icon" />
+                </span>
               </a>
-              <SignOut>
+              <SignOut onClick={() => props.signOut()}>
                 <a>Sign Out</a>
               </SignOut>
             </User>
@@ -99,4 +108,14 @@ const Header = () => {
   );
 };
 
-export default Header;
+const mapStateToProps = (state) => {
+  return {
+    user: state.userState.user,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  signOut: () => dispatch(signOutApi()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);

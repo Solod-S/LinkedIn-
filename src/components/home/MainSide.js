@@ -8,6 +8,9 @@ import {
   SocialCounts,
   SocialActions,
 } from "./MainSide.styled";
+import { useState } from "react";
+
+import PostModal from "../shared/Post/PostModal";
 
 import user from "../../../src/images/user.svg";
 import photo from "../../../src/images/photo-icon.svg";
@@ -24,13 +27,34 @@ import reportAction from "../../../src/images/reportAction.svg";
 import sendAction from "../../../src/images/sendAction.svg";
 
 const MainSide = () => {
+  const [showModal, setshowModal] = useState("close");
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (e.target !== e.currentTarget) {
+      return;
+    }
+    switch (showModal) {
+      case "open":
+        setshowModal("close");
+        break;
+
+      case "close":
+        setshowModal("open");
+        break;
+
+      default:
+        setshowModal("close");
+        break;
+    }
+  };
   return (
     <Container>
       <ShareBox>
         Share
         <div>
           <img src={user} alt="user icon" />
-          <button>Start a post</button>
+          <button onClick={handleClick}>Start a post</button>
         </div>
         <div>
           <button>
@@ -104,6 +128,7 @@ const MainSide = () => {
           </SocialActions>
         </Article>
       </div>
+      <PostModal showModal={showModal} handleClick={handleClick} />
     </Container>
   );
 };
