@@ -88,6 +88,7 @@ export const SharedActor = styled.div`
     text-decoration: none;
 
     img {
+      border-radius: 50%;
       width: 48px;
       height: 48px;
     }
@@ -149,7 +150,8 @@ export const SharedImg = styled.div`
 export const SocialCounts = styled.ul`
   line-height: 1.3;
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: center;
   overflow: auto;
   margin: 0 16px;
   padding: 8px 0;
@@ -160,19 +162,25 @@ export const SocialCounts = styled.ul`
     font-size: 12px;
     button {
       display: flex;
+      border: none;
+      background: white;
     }
   }
 `;
 
 export const SocialActions = styled.div`
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
   margin: 0;
   padding: 4p 8px;
   button {
     display: inline-flex;
     align-items: center;
+    border: none;
+    background-color: white;
     padding: 8px;
     color: #0a66c2;
 
@@ -181,5 +189,16 @@ export const SocialActions = styled.div`
         margin-left: 8px;
       }
     }
+  }
+`;
+
+export const Content = styled.div`
+  text-align: center;
+  & > img {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    z-index: 99;
+    max-width: 400px;
   }
 `;

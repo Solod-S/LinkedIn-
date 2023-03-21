@@ -9,6 +9,7 @@ export const Container = styled.div`
   bottom: 0;
   z-index: 9999;
   background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.3s;
 `;
 export const Contant = styled.div`
   width: 100%;
@@ -39,7 +40,8 @@ export const Header = styled.div`
     min-width: 40px;
     min-width: auto;
     color: rgba(0, 0, 0.15);
-    svg {
+    svg,
+    img {
       pointer-events: none;
     }
   }
@@ -113,12 +115,13 @@ export const PostButton = styled.button`
   border-radius: 20px;
   padding-left: 16px;
   padding-right: 16px;
-  background: #0a66c2;
+  background: ${(props) => (props.disabled ? "rgba(0,0,0, 0.2)" : "#0a66c2")};
   border: none;
-  color: white;
+  color: ${(props) => (props.disabled ? "rgba(0,0,0, 0.8)" : "white")};
   transition: background 167ms;
   &:hover {
-    background: #004182;
+    /* background: #004182; */
+    background: ${(props) => (props.disabled ? "rgba(0,0,0, 0.2)" : "#004182")};
   }
 `;
 
@@ -134,5 +137,12 @@ export const Editor = styled.div`
     height: 35px;
     font-size: 16px;
     margin-bottom: 20px;
+  }
+`;
+
+export const UploadImage = styled.div`
+  text-align: center;
+  img {
+    width: 100%;
   }
 `;
