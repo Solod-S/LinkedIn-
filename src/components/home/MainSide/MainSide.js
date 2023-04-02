@@ -8,13 +8,13 @@ import {
   SocialCounts,
   SocialActions,
   Content,
-} from "./MainSide.styled";
+} from "../MainSide/MainSide.styled";
 import { connect } from "react-redux";
 import { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
-import getArticlesApi from "../../redux/actions/getArticlesApi";
+import getArticlesApi from "../../../redux/actions/getArticlesApi";
 
-import PostModal from "../shared/Post/PostModal";
+import PostModal from "../../shared/Post/PostModal";
 
 import user from "../../../src/images/user.svg";
 import photo from "../../../src/images/photo-icon.svg";

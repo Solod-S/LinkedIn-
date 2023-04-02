@@ -2,9 +2,9 @@ import { Container, Section, Layout } from "./Home.styled";
 import { Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 
-import LeftSide from "./LeftSide";
-import MainSide from "./MainSide";
-import RigthSide from "./RightSide";
+import LeftSide from "../LeftSide/LeftSide";
+import MainSide from "../MainSide/MainSide";
+import RigthSide from "../RightSide/RightSide";
 
 const Home = (props) => {
   return (

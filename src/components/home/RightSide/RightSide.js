@@ -6,7 +6,7 @@ import {
   Avatar,
   Recommendation,
   BannerCard,
-} from "./RightSide.styled";
+} from "../RightSide/RightSide.styled";
 
 import feed from "../../../src/images/feed-icon.svg";
 import right from "../../../src/images/right-icon.svg";

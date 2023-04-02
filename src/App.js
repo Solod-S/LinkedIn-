@@ -1,11 +1,10 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
 
 import { connect } from "react-redux";
 
+import HomePage from "./pages/HomePage/HomePage";
 import Login from "./components/login/Login";
-import Header from "./components/shared/Header/Header";
-import Home from "./components/home/Home";
 import getUserAuth from "./redux/actions/getUserAuth";
 
 function App(props) {
@@ -15,11 +14,7 @@ function App(props) {
   return (
     <Routes>
       <Route end path="/" element={<Login />} />
-      <Route
-        end
-        path="/home"
-        element={[<Header key="1" />, <Home key="2" />]}
-      />
+      <Route end path="/home" element={<HomePage />} />
     </Routes>
   );
 }
