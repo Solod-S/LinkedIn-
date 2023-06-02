@@ -137,6 +137,7 @@ export const Form = styled.div`
 export const Google = styled.button`
   display: flex;
   justify-content: center;
+  margin-bottom: 15px;
   background-color: #fff;
   align-items: center;
   height: 56px;

@@ -35,6 +35,7 @@ const MainSide = (props) => {
   const [showModal, setshowModal] = useState("close");
   useEffect(() => {
     props.getArticles();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.user, props.articles.length]);
   const handleClick = (e) => {
     e.preventDefault();
@@ -139,7 +140,11 @@ const MainSide = (props) => {
               props.articles.map((article, key) => (
                 <Article key={key}>
                   <SharedActor>
-                    <a>
+                    <a
+                      href="/LinkedInClone/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <img src={article.actor.image} alt="user icon" />
                       <div>
                         <span>{article.actor.title}</span>
@@ -155,7 +160,11 @@ const MainSide = (props) => {
                   </SharedActor>
                   <Description>{article.description}</Description>
                   <SharedImg>
-                    <a>
+                    <a
+                      href="/LinkedInClone/home"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       {!article.image && article.video ? (
                         <ReactPlayer
                           width={"100%"}
@@ -164,7 +173,7 @@ const MainSide = (props) => {
                         />
                       ) : (
                         article.image && (
-                          <img src={article.image} alt="shared image" />
+                          <img src={article.image} alt="shared" />
                         )
                       )}
                     </a>
@@ -178,7 +187,13 @@ const MainSide = (props) => {
                       </button>
                     </li>
                     <li>
-                      <a>{article.comments}</a>
+                      <a
+                        href="/LinkedInClone/home"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {article.comments}
+                      </a>
                     </li>
                   </SocialCounts>
                   <SocialActions>
@@ -201,10 +216,9 @@ const MainSide = (props) => {
                   </SocialActions>
                 </Article>
               ))}
-
             {/* <Article>
               <SharedActor>
-                <a>
+                <a >
                   <img src={user} alt="user icon" />
                   <div>
                     <span>Title</span>
@@ -218,7 +232,7 @@ const MainSide = (props) => {
               </SharedActor>
               <Description>Description</Description>
               <SharedImg>
-                <a>
+                <a >
                   <img src={exmpPost} alt="shared image" />
                 </a>
               </SharedImg>
@@ -231,7 +245,7 @@ const MainSide = (props) => {
                   </button>
                 </li>
                 <li>
-                  <a>2 comments</a>
+                  <a >2 comments</a>
                 </li>
               </SocialCounts>
               <SocialActions>

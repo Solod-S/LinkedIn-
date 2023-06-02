@@ -22,21 +22,41 @@ const RigthSide = () => {
         </Title>
         <FeedList>
           <li>
-            <a>
+            <a
+              href="/LinkedInClone/home"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Avatar />
             </a>
             <div>
               <span>Linkedin</span>
-              <button>Follow</button>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Follow
+              </a>
             </div>
           </li>
           <li>
-            <a>
+            <a
+              href="/LinkedInClone/home"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Avatar />
             </a>
             <div>
               <span>Video</span>
-              <button>Follow</button>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Follow
+              </a>
             </div>
           </li>
         </FeedList>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
   padding-top: 52px;
@@ -36,7 +35,7 @@ export const Section = styled.section`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0 5px;
-  } ;
+  }
 `;
 
 export const Layout = styled.div`

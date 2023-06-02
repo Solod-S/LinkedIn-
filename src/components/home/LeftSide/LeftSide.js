@@ -22,18 +22,18 @@ const LeftSide = (props) => {
       <ArtCard>
         <UserInfo>
           <CardBackGround />
-          <a>
+          <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
             <Photo />
             <Link>
               Welcome, {props.user ? props.user.displayName : "there"}!
             </Link>
           </a>
-          <a>
+          <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
             <AddPhotoText>Add a photo</AddPhotoText>
           </a>
         </UserInfo>
         <Widget>
-          <a>
+          <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
             <div>
               <span>Connections</span>
               <span>Grow your network</span>
@@ -49,19 +49,19 @@ const LeftSide = (props) => {
         </Item>
       </ArtCard>
       <CommunityCard>
-        <a>
+        <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
           <span>Groups</span>
         </a>
-        <a>
+        <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
           <span>
             Events
             <img src={plus} alt="plus icon" />
           </span>
         </a>
-        <a>
+        <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
           <span>Follow Hashtags</span>
         </a>
-        <a>
+        <a href="/LinkedInClone/home" target="_blank" rel="noopener noreferrer">
           <span>Discover more</span>
         </a>
       </CommunityCard>

@@ -47,37 +47,61 @@ const Header = (props) => {
         <Nav>
           <NavListWrap>
             <NavListItem className="active">
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navHome} alt="navigation-home icon" />
                 <span>Home</span>
               </a>
             </NavListItem>
             <NavListItem>
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navNetwork} alt="navigation-network icon" />
                 <span>My Network</span>
               </a>
             </NavListItem>
             <NavListItem>
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navJobs} alt="navigation-jobs icon" />
                 <span>Jobs</span>
               </a>
             </NavListItem>
             <NavListItem>
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navMessaging} alt="navigation-messaging icon" />
                 <span>Messaging</span>
               </a>
             </NavListItem>
             <NavListItem>
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navNotification} alt="navigation-notification icon" />
                 <span>Notification</span>
               </a>
             </NavListItem>
             <User>
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {props.user && props.user.photoURL ? (
                   <img src={props.user.photoURL} alt="user icon" />
                 ) : (
@@ -89,11 +113,15 @@ const Header = (props) => {
                 </span>
               </a>
               <SignOut onClick={() => props.signOut()}>
-                <a>Sign Out</a>
+                <a href="/LinkedInClone">Sign Out</a>
               </SignOut>
             </User>
             <Work>
-              <a>
+              <a
+                href="/LinkedInClone/home"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={navWork} alt="navigation-work icon" />
                 <span>
                   Work

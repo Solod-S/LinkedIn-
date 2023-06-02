@@ -10,7 +10,6 @@ import {
   Google,
 } from "./Login.styled";
 import { Navigate } from "react-router-dom";
-import { useEffect } from "react";
 
 import { connect } from "react-redux";
 import signInApi from "../../redux/actions/signInApi";
