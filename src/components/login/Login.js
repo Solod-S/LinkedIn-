@@ -20,7 +20,6 @@ import hero from "../../../src/images/login-hero.svg";
 import google from "../../../src/images/google.svg";
 
 const Login = (props) => {
-  console.log(props);
   return (
     <Container>
       {props.user && <Navigate to="/home" />}

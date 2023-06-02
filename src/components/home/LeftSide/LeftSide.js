@@ -12,9 +12,9 @@ import {
 } from "./LeftSide.styled";
 import { connect } from "react-redux";
 
-import widget from "../../../src/images/widget-icon.svg";
-import item from "../../../src/images/item-icon.svg";
-import plus from "../../../src/images/plus-icon.svg";
+import widget from "../../../../src/images/widget-icon.svg";
+import item from "../../../../src/images/item-icon.svg";
+import plus from "../../../../src/images/plus-icon.svg";
 
 const LeftSide = (props) => {
   return (

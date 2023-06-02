@@ -116,7 +116,6 @@ export const NavListItem = styled.li`
       align-items: center;
       transition: color 167ms;
     }
-
     @media (max-width: 768px) {
       min-width: 70px;
     }

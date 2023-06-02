@@ -36,7 +36,6 @@ const PostModal = (props) => {
       alert(`not an image, the file is a ${typeof image} `);
       return;
     }
-    console.log(image);
     setShareImage(image);
   };
 

@@ -8,9 +8,9 @@ import {
   BannerCard,
 } from "../RightSide/RightSide.styled";
 
-import feed from "../../../src/images/feed-icon.svg";
-import right from "../../../src/images/right-icon.svg";
-import banner from "../../../src/images/banner.jpg";
+import feed from "../../../../src/images/feed-icon.svg";
+import right from "../../../../src/images/right-icon.svg";
+import banner from "../../../../src/images/banner.jpg";
 
 const RigthSide = () => {
   return (

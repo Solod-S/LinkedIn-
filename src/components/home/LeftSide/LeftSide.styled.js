@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-import bg from "../../../src/images/card-bg.svg";
-import photo from "../../../src/images/photo.svg";
+import bg from "../../../../src/images/card-bg.svg";
+import photo from "../../../../src/images/photo.svg";
 
 export const Container = styled.div`
   grid-area: leftside;

@@ -116,8 +116,12 @@ export const NavListItem = styled.li`
       align-items: center;
       transition: color 167ms;
     }
-    @media (max-width: 768px) {
+
+    @media (min-width: 478px) and (max-width: 768px) {
       min-width: 70px;
+    }
+    @media (max-width: 478px) {
+      min-width: 48px;
     }
   }
   &:hover,

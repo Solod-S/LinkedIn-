@@ -22,7 +22,7 @@ import event from "../../../../src/images/event.svg";
 import video from "../../../../src/images/video.svg";
 import article from "../../../../src/images/article.svg";
 import ellipsis from "../../../../src/images/ellipsis.svg";
-// import exmpPost from "../../../../src/images/post_exmpl.jpg";
+import exmpPost from "../../../../src/images/post_exmpl.jpg";
 import like from "../../../../src/images/like.svg";
 import claping from "../../../../src/images/claping.svg";
 import likeAction from "../../../../src/images/like2.svg";
@@ -41,7 +41,6 @@ const MainSide = (props) => {
     if (e.target !== e.currentTarget) {
       return;
     }
-
     switch (showModal) {
       case "open":
         setshowModal("close");
@@ -59,44 +58,7 @@ const MainSide = (props) => {
   return (
     <>
       {props.articles.length === 0 ? (
-        <Container>
-          <p>There are no articles</p>
-          <ShareBox>
-            <div>
-              {props.user && props.user.photoURL ? (
-                <img src={props.user.photoURL} alt="user icon" />
-              ) : (
-                <img src={user} alt="user icon" />
-              )}
-
-              <button
-                onClick={handleClick}
-                disabled={props.loading ? true : false}
-              >
-                Start a post
-              </button>
-            </div>
-            <div>
-              <button>
-                <img src={photo} alt="photocard icon" />
-                <span>Photo</span>
-              </button>
-              <button>
-                <img src={video} alt="video icon" />
-                <span>Video</span>
-              </button>
-              <button>
-                <img src={event} alt="event icon" />
-                <span>Event</span>
-              </button>
-              <button>
-                <img src={article} alt="article icon" />
-                <span>Write article</span>
-              </button>
-            </div>
-          </ShareBox>
-          <PostModal showModal={showModal} handleClick={handleClick} />
-        </Container>
+        <p>There are no articles</p>
       ) : (
         <Container>
           <ShareBox>

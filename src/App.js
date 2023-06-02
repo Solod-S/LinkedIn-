@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { useEffect } from "react";
+import "modern-normalize/modern-normalize.css";
 
 import { connect } from "react-redux";
 
