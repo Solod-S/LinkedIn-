@@ -1,16 +1,9 @@
-// Import the functions you need from the SDKs you need
-
 import firebase from "firebase";
+const apiKey = process.env.REACT_APP_API_KEY;
 
-// import firebase from "firebase/app";
-// import "firebase/firestore";
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
+// Import the functions you need from the SDKs you need
 const firebaseConfig = {
-  apiKey: "AIzaSyDkeIbtUXPcHWp-RJmOyzTP5Jngmn--Ryc",
+  apiKey,
   authDomain: "linkedin-clone-c1710.firebaseapp.com",
   projectId: "linkedin-clone-c1710",
   storageBucket: "linkedin-clone-c1710.appspot.com",
@@ -18,7 +11,6 @@ const firebaseConfig = {
   appId: "1:132246881336:web:f4b9354a55533b220812cd",
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
 const auth = firebase.auth();

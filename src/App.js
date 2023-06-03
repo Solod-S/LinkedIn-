@@ -4,8 +4,7 @@ import "modern-normalize/modern-normalize.css";
 
 import { connect } from "react-redux";
 
-import HomePage from "./pages/HomePage/HomePage";
-import Login from "./components/login/Login";
+import { HomePage, LoginPage } from "./pages";
 import getUserAuth from "./redux/actions/getUserAuth";
 
 function App(props) {
@@ -14,7 +13,7 @@ function App(props) {
   }, [props]);
   return (
     <Routes>
-      <Route end path="/" element={<Login />} />
+      <Route end path="/" element={<LoginPage />} />
       <Route end path="/home" element={<HomePage />} />
     </Routes>
   );

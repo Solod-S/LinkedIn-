@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+![Version](https://img.shields.io/badge/Version-1.0-blue.svg?cacheSeconds=2592000)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![runs with reactnative](https://img.shields.io/badge/Runs%20with%20React-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=61DAFB)](https://reactnative.dev/)
+[![runs with router dom](https://img.shields.io/badge/Runs%20with%20React_Router_Dom-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=blue)](https://expo.io/)
+[![runs with redux](https://img.shields.io/badge/Runs%20with%20Redux-000.svg?style=flat-square&logo=Redux&labelColor=f3f3f3&logoColor=7247B5)](https://redux.js.org/)
+[![runs with firebase](https://img.shields.io/badge/Runs%20with%20Firebase-000.svg?style=flat-square&logo=Firebase&labelColor=f3f3f3&logoColor=FFCB2D)](https://firebase.google.com/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# LinkedIn Clone
 
-## Available Scripts
+![LinkedIn Clone Demo](linkedIn.gif)
 
-In the project directory, you can run:
+**_Built using React JS, Redux, Firebase & Styled-Components_**. It's created with help of the tutorial on YouTube by _'Clever Programmer'_. Added some features apart from the tutorial on my own like:
 
-### `npm start`
+- Post like functionality
+- Mobile responsiveness
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features and Fuctionality
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Login using Google (Firebase Authentication)
+- Create a new post
+- Share photos and videos (React player for videos)
+- Auto authenticate user on refresh
+- Sign Out
 
-### `npm test`
+## How to build your own..?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repo
+1. Install all the dependencies
+   ```bash
+   npm i
+   ```
+1. Setup Firebase
 
-### `npm run build`
+   - Create Firebase account
+   - Create a new project
+   - Create a web app for that
+   - Copy your config from there
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     - Select config option
+     - Paste those config inside src/fBase/fBase.js file
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   - Setup authentication using Google
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Future Plans
 
-### `npm run eject`
+- Write a backend (nod js/express/mongoDB) and attach it to this draft
+- Make it on Redux Toolkit
+- Add more login methods
+- Post deleting functionality
+- Add comments on post
+- Add likes on post/comments
+- Add favorites
+- Add users profile page
+- Add company page
+- Add jobs page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**_NOTE: PLEASE LET ME KNOW IF YOU DISCOVERED ANY BUG OR YOU HAVE ANY SUGGESTIONS_**
