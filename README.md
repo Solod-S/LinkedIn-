@@ -47,10 +47,10 @@
 - Make it on Redux Toolkit
 - Add more login methods
 - Post deleting functionality
-- Add comments on post
-- Add likes on post/comments
+- Add post's comments
+- Add post's/comment's likes
 - Add favorites
-- Add users profile page
+- Add user profile page
 - Add company page
 - Add jobs page
 
