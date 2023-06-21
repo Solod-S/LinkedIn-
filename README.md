@@ -1,20 +1,26 @@
 ![Version](https://img.shields.io/badge/Version-1.0-blue.svg?cacheSeconds=2592000)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![runs with reactnative](https://img.shields.io/badge/Runs%20with%20React-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=61DAFB)](https://reactnative.dev/)
-[![runs with router dom](https://img.shields.io/badge/Runs%20with%20React_Router_Dom-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=blue)](https://expo.io/)
+[![runs with reactnative](https://img.shields.io/badge/Runs%20with%20React-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=61DAFB)](https://uk.legacy.reactjs.org/)
+[![runs with router dom](https://img.shields.io/badge/Runs%20with%20React_Router_Dom-000.svg?style=flat-square&logo=React&labelColor=f3f3f3&logoColor=blue)](https://reactrouter.com/en/main)
 [![runs with redux](https://img.shields.io/badge/Runs%20with%20Redux-000.svg?style=flat-square&logo=Redux&labelColor=f3f3f3&logoColor=7247B5)](https://redux.js.org/)
 [![runs with firebase](https://img.shields.io/badge/Runs%20with%20Firebase-000.svg?style=flat-square&logo=Firebase&labelColor=f3f3f3&logoColor=FFCB2D)](https://firebase.google.com/)
 
+![LinkedIn Clone Demo](./src/images/about/link_pc-min.jpg)
+
 # LinkedIn Clone
 
-![LinkedIn Clone Demo](linkedIn.gif)
+![LinkedIn Clone Demo](./src/images/about/link_phone-min.jpg)
 
 **_Built using React JS, Redux, Firebase & Styled-Components_**. It's created with help of the tutorial on YouTube by _'Clever Programmer'_. Added some features apart from the tutorial on my own like:
 
 - Post like functionality
 - Mobile responsiveness
 
+![LinkedIn Clone Demo](./src/images/about/link_tablet-min.jpg)
+
 ## Features and Fuctionality
+
+![LinkedIn Clone Demo](linkedIn.gif)
 
 - Login using Google (Firebase Authentication)
 - Create a new post
@@ -53,5 +59,9 @@
 - Add user profile page
 - Add company page
 - Add jobs page
+
+## Contributing
+
+Contributions are welcome! If you have any suggestions or improvements, please create a pull request. For major changes, please open an issue first to discuss the changes.
 
 **_NOTE: PLEASE LET ME KNOW IF YOU DISCOVERED ANY BUG OR YOU HAVE ANY SUGGESTIONS_**
